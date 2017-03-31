@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Atletico</title>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>El Ultimo 10</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <title>Gutenberg — Meaningful Web Typography Starter Kit</title>
+  <link rel="stylesheet" href="assets/combined.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700|Merriweather:400,700" rel="stylesheet">
 </head>
 <body>
 
 <%= yield %>
+
+<footer>
+    <p>
+      <small>
+        Adapted from <a href="https://en.wikipedia.org/wiki/Johannes_Gutenberg">Wikipedia</a> and <a href="http://www.biography.com/people/johannes-gutenberg-9323828">biography.com</a>.
+      </small>
+    </p>
+  </footer>
 
 </body>
 </html>
