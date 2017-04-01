@@ -1,0 +1,41 @@
+.navigation {
+  height: 60px;
+  background-color: #d5d5d5;
+  max-width: none !important;
+}
+
+.row {
+  max-width: none !important;
+}
+
+.navigation--left ul {
+    float: right;
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+.navigation--left li {
+  display: inline; 
+  padding: 20px; 
+}
+
+
+.navigation--right ul {
+    float: right;
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+.navigation--right li {
+  display: inline; 
+  padding: 20px; 
+}
+
+.navigation--center {
+  text-align: center;
+  height: auto;
+  padding: 8px 0px;
+  margin: 0px;
+}
