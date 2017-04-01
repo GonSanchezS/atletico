@@ -1,4 +1,5 @@
 @import 'normalize';
+@import 'bootstrap';
 
 $header-font: Merriweather, serif;
 $body-font: Merriweather Sans, sans-serif;
@@ -17,28 +18,33 @@ html {
 
 @media screen and (min-width: 40em) {
   html {
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 18px !important;
+    font-size: 1.125rem !important;
   }
 }
 
+.article--body {
+
+  padding-left: 55px;
 * {
   line-height: 26px;
   line-height: 1.625rem;
   margin: 0px 0px 26px;
   margin: 0rem 0rem 1.625rem;
 }
+}
 
 @media screen and (min-width: 40em) {
+
+  .article--body {
   * {
     line-height: 29px;
     line-height: 1.611111111111111rem;
     margin-bottom: 29px;
     margin-bottom: 1.611111111111111rem;
-    max-width: 630px;
-    max-width: 35rem;
     margin-left: auto;
     margin-right: auto;
+  }
   }
 }
 
@@ -244,6 +250,64 @@ h5 + h6 {
   }
 }
 
+////
+
+body {padding-top: 70px;}
 
 
+///// Good stuff in Nav
 
+.logo {
+  width: 200px;
+  margin: auto;
+  display: block;
+
+  a {
+      font-size: 1.3em;
+  }
+}
+
+
+.navbar-brand {
+  font-family: Roboto Slab, serif;
+}
+
+.suscribe {
+  font-size: 0.8em;
+}
+
+.nav--secondary {
+  height: 25px;
+  width: 100% !important;
+  max-width: none;
+}
+
+.nav--details {
+  font-size: 0.55em;
+  margin-bottom: 0px;
+  height: 25px !important;
+
+  li {
+    height: 25px !important;
+  }
+
+  a { 
+    padding-top: 0 !important;
+  }
+}
+
+.container {
+  height: 70px;
+}
+
+.navbar-right-2 {
+  margin-right: 0px;
+}
+
+.last--item {
+  padding-right: 0px !important;
+}
+
+.navbar {
+  border: none;
+}
