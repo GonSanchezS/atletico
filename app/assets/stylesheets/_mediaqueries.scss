@@ -10,6 +10,12 @@
     text-transform: uppercase;
     font-size: 0.7em;
   }
+
+  #nav-container {
+    width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0 !important;
+  }
 }
 
 @media screen and (min-width: 40em) {
@@ -146,6 +152,9 @@
     height: 25px;
     width: 100% !important;
     max-width: none;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding: 0 15px;
   }
 
   .nav--details {
@@ -156,10 +165,12 @@
 
     li {
       height: 25px !important;
+      color: white;
     }
 
     a { 
-      padding-top: 0 !important;
+      padding-top: 3px !important;
+      color: #f9f9f9 !important;
     }
   }
 
@@ -175,9 +186,6 @@
     }
   }
 
-  .last--item {
-    padding-right: 0px !important;
-  }
 
   .navbar {
     border: none;

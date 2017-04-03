@@ -143,7 +143,17 @@ html {
     a {
       font-family: $logo-font;
       font-size: 1.3em;
+      color: #fff !important;
     }
   }
 
+// Nav
 
+  .nav--secondary {
+    background-color: #222;
+  }
+
+
+  .navbar-default {
+    background-color: #004DA7;
+  }
