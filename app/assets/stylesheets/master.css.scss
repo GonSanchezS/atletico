@@ -1,10 +1,14 @@
 @import 'normalize';
 @import 'bootstrap';
+@import 'variables';
+@import 'mediaqueries';
 
-$header-font: Merriweather, serif;
-$body-font: Merriweather Sans, sans-serif;
 
-$black: #222;
+// Global 
+
+body {
+  margin-bottom: $footer-height;
+}
 
 html {
   box-sizing: border-box;
@@ -14,41 +18,24 @@ html {
   color: $black;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  position: relative; // Sticky footer
+  min-height: 100%; // Sticky footer
 }
 
-@media screen and (min-width: 40em) {
-  html {
-    font-size: 18px !important;
-    font-size: 1.125rem !important;
-  }
+.clear {
+  clear: both;
 }
+
+// Mobile styles body
 
 .article--body {
 
-  padding-left: 55px;
-* {
-  line-height: 26px;
-  line-height: 1.625rem;
-  margin: 0px 0px 26px;
-  margin: 0rem 0rem 1.625rem;
-}
-}
-
-@media screen and (min-width: 40em) {
-
-  .article--body {
   * {
-    line-height: 29px;
-    line-height: 1.611111111111111rem;
-    margin-bottom: 29px;
-    margin-bottom: 1.611111111111111rem;
-    margin-left: auto;
-    margin-right: auto;
+    line-height: 26px;
+    line-height: 1.625rem;
+    margin: 0px 0px 26px;
+    margin: 0rem 0rem 1.625rem;
   }
-  }
-}
-
-.article--body {
 
   h1 {
     font-size: 40px;
@@ -60,8 +47,6 @@ html {
     margin-bottom: 26px;
     margin-bottom: 1.625rem;
   }
-
-
 
   h2 {
     font-size: 27px;
@@ -119,195 +104,46 @@ html {
   }
 
   h6 {
-  font-style: italic;
-  font-weight: normal;
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Merriweather, serif;
-}
-
-}
-
-
-
-@media screen and (min-width: 40em) {
-
-  .article--body {
-    h1 {
-      font-size: 40px;
-      font-size: 2.5rem;
-      line-height: 58px;
-      line-height: 3.222222222222223rem;
-      margin-top: 116px;
-      margin-top: 6.444444444444445rem;
-      margin-bottom: 29px;
-      margin-bottom: 1.611111111111111rem;
-    }
-
-    h2 {
-      font-size: 27px;
-      font-size: 1.6875rem;
-      line-height: 43.5px;
-      line-height: 2.416666666666667rem;
-      margin-top: 72.5px;
-      margin-top: 4.027777777777778rem;
-      margin-bottom: 14.5px;
-      margin-bottom: 0.805555555555556rem;
-    }
-
-    h3 {
-      font-size: 22px;
-      font-size: 1.375rem;
-      line-height: 29px;
-      line-height: 1.611111111111111rem;
-      margin-top: 58px;
-      margin-top: 3.222222222222223rem;
-      margin-bottom: 14.5px;
-      margin-bottom: 0.805555555555556rem;
-    }
-
-    h4 {
-      font-size: 19.2px;
-      font-size: 1.2rem;
-      line-height: 29px;
-      line-height: 1.611111111111111rem;
-      margin-top: 43.5px;
-      margin-top: 2.416666666666667rem;
-      margin-bottom: 14.5px;
-      margin-bottom: 0.805555555555556rem;
-    }
-
-    h5 {
-      font-size: 16px;
-      font-size: 1rem;
-      line-height: 29px;
-      line-height: 1.611111111111111rem;
-      margin-top: 72.5px;
-      margin-top: 4.027777777777778rem;
-      margin-bottom: 14.5px;
-      margin-bottom: 0.805555555555556rem;
-    }
-
-    h6 {
-      font-size: 16px;
-      font-size: 1rem;
-      line-height: 29px;
-      line-height: 1.611111111111111rem;
-      margin-top: 72.5px;
-      margin-top: 4.027777777777778rem;
-      margin-bottom: 14.5px;
-      margin-bottom: 0.805555555555556rem;
-    }
-
-    h1 + h2 {
-      margin-top: 26px;
-      margin-top: 1.625rem;
-    }
+    font-style: italic;
+    font-weight: normal;
   }
-}
 
-/////
-
-@media screen and (min-width: 40em) {
-  h1 + h2 {
-    margin-top: 29px;
-    margin-top: 1.611111111111111rem;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Merriweather, serif;
   }
-}
 
-h2 + h3,
-h3 + h4,
-h4 + h5 {
-  margin-top: 13px;
-  margin-top: 0.8125rem;
-}
-
-@media screen and (min-width: 40em) {
   h2 + h3,
   h3 + h4,
   h4 + h5 {
-    margin-top: 14.5px;
-    margin-top: 0.805555555555556rem;
+    margin-top: 13px;
+    margin-top: 0.8125rem;
   }
-}
 
-h5 + h6 {
-  margin-top: -13px;
-  margin-top: -0.8125rem;
-}
-
-@media screen and (min-width: 40em) {
   h5 + h6 {
-    margin-top: -14.5px;
-    margin-top: -0.805555555555556rem;
+    margin-top: -13px;
+    margin-top: -0.8125rem;
   }
 }
 
-////
+/// Footer
 
-body {padding-top: 70px;}
-
-
-///// Good stuff in Nav
-
-.logo {
-  width: 200px;
-  margin: auto;
-  display: block;
-
-  a {
-      font-size: 1.3em;
-  }
-}
-
-
-.navbar-brand {
-  font-family: Roboto Slab, serif;
-}
-
-.suscribe {
-  font-size: 0.8em;
-}
-
-.nav--secondary {
-  height: 25px;
-  width: 100% !important;
-  max-width: none;
-}
-
-.nav--details {
-  font-size: 0.55em;
+.footer {
+  position: absolute;
   margin-bottom: 0px;
-  height: 25px !important;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: $footer-height;
+  background-color: #f5f5f5;
+}
 
-  li {
-    height: 25px !important;
+// Logo
+
+  .logo--desktop, .logo--mobile {
+    a {
+      font-family: $logo-font;
+      font-size: 1.3em;
+    }
   }
 
-  a { 
-    padding-top: 0 !important;
-  }
-}
 
-.container {
-  height: 70px;
-}
-
-.navbar-right-2 {
-  margin-right: 0px;
-}
-
-.last--item {
-  padding-right: 0px !important;
-}
-
-.navbar {
-  border: none;
-}
