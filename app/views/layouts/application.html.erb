@@ -13,8 +13,27 @@
   <link rel="stylesheet" href="assets/combined.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700|Merriweather:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 </head>
 <body>
+
+<script>
+
+
+$(window).scroll(function() {
+
+    if ($(this).scrollTop()>0)
+     {
+        $('.nav--secondary').fadeOut();
+     }
+    else
+     {
+      $('.nav--secondary').fadeIn();
+     }
+ });
+
+
+</script>
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -44,12 +63,13 @@
             <div class="logo--desktop"><a class="navbar-brand" href="#">EL ULTIMO 10</a></div>
 
             <ul class="nav navbar-nav navbar-right navbar--subscribe">
-              <li><a href="#">Suscribirme</a></li>
+              <li><a href="#"><i class="em em-mailbox" style="font-size: 0.8em;"></i> Suscribirme</a></li>
             </ul>
           </div>
 
+
           <div class="row nav--secondary">
-            <ul class="nav navbar-nav nav--details">
+            <ul class="nav navbar-nav nav--details pull-left">
               <li><a href="#">Posicion 11</a></li>
               <li><a href="#about">Promedio 1.249</a></li>
               <li><a href="#contact">GEEEPGG</a></li>
@@ -57,12 +77,13 @@
             <ul class="nav navbar-nav navbar-right nav--details">
               <li><a href="#">Proximo Rival Talleres vs Arsenal</a></li>
               <li><a class="last--item" href="#">TV Miercoles 18 30</a></li>
-            </ul>
-          </div>
+          </ul>
+        </div>
 
         </div><!--/.nav-collapse -->
 
       </div>
+
 
     </nav>
 

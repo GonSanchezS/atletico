@@ -45,7 +45,7 @@
   .article--body {
 
     padding-left: 55px;
-    max-width: 35em;
+    max-width: 40em;
 
     * {
       line-height: 29px;
@@ -143,10 +143,19 @@
       margin-top: -14.5px;
       margin-top: -0.805555555555556rem;
     }
+
+    small {
+    line-height: 14.5px;
+    line-height: 0.805555555555556rem;
+    }
   }
 
   ///// Good stuff in Nav
 
+  .nav--primary {
+    padding: 0 70px;
+
+  }
 
   .nav--secondary {
     height: 25px;
@@ -154,12 +163,14 @@
     max-width: none;
     margin-right: 0px !important;
     margin-left: 0px !important;
-    padding: 0 15px;
+    padding: 0 55px;
   }
+
 
   .nav--details {
     font-size: 0.55em;
     margin-bottom: 0px;
+    margin-right: 0px;
     height: 25px !important;
     text-transform: uppercase;
 
@@ -175,7 +186,8 @@
   }
 
   .container {
-    height: 70px;
+    height: 50px;
+    width: 100%;
   }
 
   .navbar--subscribe {
